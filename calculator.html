@@ -1,0 +1,69 @@
+<html>
+<head>
+    <style>
+input#b{
+    height: 60px;
+    width: 60px;
+    font-size: 25px;
+}
+input#out{    
+    height:60px ;
+    width: 252px;
+    font-size: 25px;
+    padding: 25px;
+    background-color: darkolivegreen;
+}
+input#c{
+    height:60px ;
+    width: 252px;
+    font-size: 25px;
+padding: 10px;
+}
+div#division{
+    border-style: dotted;
+    border-width: 3px;
+    height: 390px;
+    width:320px;
+     position: absolute;
+    margin-top: 80px;
+    margin-left: 500px;
+    padding-left: 60px;
+    padding-bottom: 15px;
+    padding-top: 55px;
+border-radius: 100px;
+}
+h1{
+    text-align: center;
+    color: olivedrab;
+}
+body{
+    background-image: url(12.jpg);
+}
+ </style> 
+    </head>
+    <body>
+            <div id="division">
+        <h1>CALCULATOR</h1>
+        <form name="calculator">
+            <input type="text" name="txt" id="out"><br>
+            <input type="button" name="btn9" value="9" id="b" onclick="calculator.txt.value +='9'">
+            <input type="button" name="btn8" value="8" id="b" onclick="calculator.txt.value +='8'">
+            <input type="button" name="btn7" value="7" id="b" onclick="calculator.txt.value +='7'">
+            <input type="button" name="adbtn" value="+" id="b" onclick="calculator.txt.value +='+'"> <br>
+            <input type="button" name="btn6" value="6" id="b" onclick="calculator.txt.value +='6'">
+            <input type="button" name="btn5" value="5" id="b" onclick="calculator.txt.value +='5'">
+            <input type="button" name="btn4" value="4" id="b" onclick="calculator.txt.value +='4'">
+            <input type="button" name="subbtn" value="-" id="b" id="b" onclick="calculator.txt.value +='-'"><br>
+            <input type="button" name="btn3" value="3" id="b" onclick="calculator.txt.value +='3'">
+            <input type="button" name="btn2" value="2" id="b" onclick="calculator.txt.value +='2'">
+            <input type="button" name="btn1" value="1" id="b" onclick="calculator.txt.value +='1'">
+            <input type="button" name="mulbtn" value="*" id="b" onclick="calculator.txt.value +='*'"><br>
+            <input type="button" name="pointbtn" value="." id="b" onclick="calculator.txt.value +='.'">
+            <input type="button" name="btn0" value="0" id="b" onclick="calculator.txt.value +='0'">
+            <input type="button" name="eqlbtn" value="=" id="b" onclick="calculator.txt.value = eval(calculator.txt.value)">
+            <input type="button" name="divbtn" value="/" id="b" onclick="calculator.txt.value +='/'"><br>
+            <input type="button" name="clrbtn" value="Clear All" id="c" onclick="calculator.txt.value = '' ">
+        </div>
+</form>
+</body>
+</html
